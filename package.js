@@ -10,12 +10,11 @@ Package.onUse(function(api) {
   api.versionsFrom('1.0.3.1');
 
   api.addFiles([
-    'lib/worker.js'
+    'lib/sass/worker.min.js'
   ], ['client'], {isAsset: true});
 
   api.addFiles([
-    'lib/sass.js',
-    'lib/sass.worker.js',
+    'lib/sass/sass.worker.js',
     'client/transcompiler.js'
   ], 'client');
 
