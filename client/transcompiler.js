@@ -1,0 +1,5 @@
+NucleusTranscompiler = {
+  _initialize: function() {
+
+  }
+};
