@@ -16,6 +16,13 @@ var Transcompiler = function() {
     }, this);
   };
 
+  this._initialize_coffeescript = function() {
+    Utils.add_script(base_path + "lib/coffee-script.js", 'CoffeeScript', function() {
+      this.CoffeeScript = window.CoffeeScript;
+      window.CoffeeScript = null;
+    }, this);
+  };
+
   this.initialize = function() {
     return this;
   };

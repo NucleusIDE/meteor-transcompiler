@@ -12,7 +12,8 @@ Package.onUse(function(api) {
   api.addFiles([
     'lib/sass/worker.min.js',
     'lib/sass/sass.worker.js',
-    'lib/less.js'
+    'lib/less.js',
+    'lib/coffee-script.js'
   ], ['client'], {isAsset: true});
 
   api.addFiles([
