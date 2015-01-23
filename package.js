@@ -10,12 +10,14 @@ Package.onUse(function(api) {
   api.versionsFrom('1.0.3.1');
 
   api.addFiles([
-    'lib/sass/worker.min.js'
+    'lib/sass/worker.min.js',
+    'lib/sass/sass.worker.js',
+    'lib/less.js'
   ], ['client'], {isAsset: true});
 
   api.addFiles([
-    'lib/sass/sass.worker.js',
-    'client/transcompiler.js'
+    'client/transcompiler.js',
+    'client/utils.js'
   ], 'client');
 
   api.export('NucleusTranscompiler', ['client']);
